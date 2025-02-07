@@ -1,3 +1,10 @@
 im gonna put smth
 
 git config --global credential.helper manager (to remove ur git credentials)
+git config --global user.name "name"
+git config --global user.email "email"
+copy repo from remote to local: git clone <link>
+add all files in current directory n subdirectories: git add .
+git push 
+see all ur branches: git branch (green = current branch)
+checkout of ur current branch to a new one: git checkout -b "name"
