@@ -20,3 +20,8 @@ git branch (green = current branch)
 
 checkout of ur current branch to a new one: 
 git checkout -b "name"
+
+delete branch:
+git branch -d "name"
+
+rename branch:
