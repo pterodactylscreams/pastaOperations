@@ -28,3 +28,11 @@ rename branch:
 
 
 #ANTIPASTI
+to merge changes from one branch to other:
+compare and pull request
+
+to reflect changes made on another branch in remote to ur local main branch:
+git pull origin main
+
+
+#MAIN CHANGE
