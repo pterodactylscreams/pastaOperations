@@ -27,12 +27,37 @@ git branch -d "name"
 rename branch:
 
 
-#ANTIPASTI
 to merge changes from one branch to other:
 compare and pull request
 
 to reflect changes made on another branch in remote to ur local main branch:
 git pull origin main
 
+you are in new branch and want to merge with main:
+git merge main
 
-#MAIN CHANGE
+push stuff in branch_name to remote repo:
+git push -u origin branch_name
+
+go back 2 last change:
+git reset file_name
+
+try these commands out 2 see diff in colours:
+add
+status
+reset
+status
+
+git reset hash_code
+
+go back to ur last change:
+git reset HEAD~1
+
+shows all commits n comments n everything:
+git log
+
+when working as an open source contributor:
+go to github, search bar, any topic u like a lot
+
+creates a rough copy of  aproject in a strangers repo to ur github:
+fork

@@ -1,0 +1,433 @@
+tudent\Desktop\pasta society> cd .\pastaOperations\
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git add .
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git commit -m "trying local to cloud"
+[main 6f5b70b] trying local to cloud
+ 1 file changed, 1 insertion(+)
+ create mode 100644 1.txt
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git push
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 298 bytes | 149.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/pterodactylscreams/pastaOperations.git
+   7383731..6f5b70b  main -> main
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git add --all
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git commit -m "local to worldwide"
+[main 2e68c38] local to worldwide
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 356 bytes | 89.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/pterodactylscreams/pastaOperations.git
+   6f5b70b..2e68c38  main -> main
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git branch
+* main
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git checkout -b "antipasti"
+Switched to a new branch 'antipasti'
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git branch
+* antipasti
+  main
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git add .
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git commit -m "added commands of exp2"
+[antipasti 8c04741] added commands of exp2
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git add .                 
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git commit -m "added commands of exp2"
+[antipasti 95f1b26] added commands of exp2
+ 1 file changed, 17 insertions(+), 5 deletions(-)
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git checkout main   
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git checkout antipasti
+Switched to branch 'antipasti'
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git checkout -b "garlic bread"
+fatal: 'garlic bread' is not a valid branch name
+hint: See `man git check-ref-format`
+hint: Disable this message with "git config advice.refSyntax false"
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git checkout -b "garlic_bread"
+Switched to a new branch 'garlic_bread'
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git branch
+  antipasti
+* garlic_bread
+  main
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git checkout main
+error: Your local changes to the following files would be overwritten by checkout:
+        1.txt
+Please commit your changes or stash them before you switch branches.
+Aborting
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git add .
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git commit -m "added commands of exp2"
+[garlic_bread 49aa0f4] added commands of exp2
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git checkout main         
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git branch
+  antipasti
+  garlic_bread
+* main
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git checkout -d garlic_bread
+HEAD is now at 49aa0f4 added commands of exp2
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git branch
+* (HEAD detached at refs/heads/garlic_bread)
+  antipasti
+  garlic_bread
+  main
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git branch -d garlic_bread
+
+Deleted branch garlic_bread (was 49aa0f4).
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git branch
+* (HEAD detached at 49aa0f4)
+  antipasti
+  main
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git checkout antipasti
+Warning: you are leaving 1 commit behind, not connected to
+any of your branches:
+
+  49aa0f4 added commands of exp2
+
+If you want to keep it by creating a new branch, this may be a good time
+to do so with:
+
+ git branch <new-branch-name> 49aa0f4
+
+Switched to branch 'antipasti'
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git branch
+* antipasti
+  main
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git add .     
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git commit -m "commands added"
+[antipasti e6e0c0d] commands added
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git push -U origin antipasti
+error: unknown switch `U'
+usage: git push [<options>] [<repository> [<refspec>...]]
+
+    -v, --[no-]verbose    be more verbose
+    -q, --[no-]quiet      be more quiet
+    --[no-]repo <repository>
+                          repository
+    --[no-]all            push all branches
+    --[no-]branches       alias of --all
+    --[no-]mirror         mirror all refs
+    -d, --[no-]delete     delete refs
+    --[no-]tags           push tags (can't be used with --all or --branches or --mirror)   
+    -n, --[no-]dry-run    dry run
+    --[no-]porcelain      machine-readable output
+    -f, --[no-]force      force updates
+    --[no-]force-with-lease[=<refname>:<expect>]
+                          require old value of ref to be at this value
+    --[no-]force-if-includes
+                          require remote updates to be integrated locally
+    --[no-]recurse-submodules (check|on-demand|no)
+                          control recursive pushing of submodules
+    --[no-]thin           use thin pack
+    --[no-]receive-pack <receive-pack>
+                          receive pack program
+    --[no-]exec <receive-pack>
+                          receive pack program
+    -u, --[no-]set-upstream
+                          set upstream for git pull/status
+    --[no-]progress       force progress reporting
+    --[no-]prune          prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --verify              opposite of --no-verify
+    --[no-]follow-tags    push missing but relevant tags
+    --[no-]signed[=(yes|no|if-asked)]
+                          GPG sign the push
+    --[no-]atomic         request atomic transaction on remote side
+    -o, --[no-]push-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git branch
+* antipasti
+  main
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git status
+On branch antipasti
+nothing to commit, working tree clean
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git checkout main
+Your branch is up to date with 'origin/main'.
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git status
+On branch antipasti
+nothing to commit, working tree clean
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git branch
+* antipasti
+  main
+PS C:\Usegit push -U origin antipasti^C society\pastaOperations>
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git push -U origin antipasti
+error: unknown switch `U'
+usage: git push [<options>] [<repository> [<refspec>...]]
+
+    -v, --[no-]verbose    be more verbose
+    -q, --[no-]quiet      be more quiet
+    --[no-]repo <repository>
+                          repository
+    --[no-]all            push all branches
+    --[no-]branches       alias of --all
+    --[no-]mirror         mirror all refs
+    -d, --[no-]delete     delete refs
+    --[no-]tags           push tags (can't be used with --all or --branches or --mirror)
+    -n, --[no-]dry-run    dry run
+    --[no-]porcelain      machine-readable output
+    -f, --[no-]force      force updates
+    --[no-]force-with-lease[=<refname>:<expect>]
+                          require old value of ref to be at this value
+    --[no-]force-if-includes
+                          require remote updates to be integrated locally
+    --[no-]recurse-submodules (check|on-demand|no)
+                          control recursive pushing of submodules
+    --[no-]thin           use thin pack
+    --[no-]receive-pack <receive-pack>
+                          receive pack program
+    --[no-]exec <receive-pack>
+                          receive pack program
+    -u, --[no-]set-upstream
+                          set upstream for git pull/status
+    --[no-]progress       force progress reporting
+    --[no-]prune          prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --verify              opposite of --no-verify
+    --[no-]follow-tags    push missing but relevant tags
+    --[no-]signed[=(yes|no|if-asked)]
+                          GPG sign the push
+    --[no-]atomic         request atomic transaction on remote side
+    -o, --[no-]push-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git push -u origin antipasti
+fatal: unable to access 'https://github.com/pterodactylscreams/pastaOperations.git/': Could not resolve host: github.com
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git push -u origin antipasti
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 1.15 KiB | 235.00 KiB/s, done.
+Total 9 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), done.
+remote:
+by visiting:
+remote:      https://github.com/pterodactylscreams/pastaOperations/pull/new/antipasti
+remote:
+To https://github.com/pterodactylscreams/pastaOperations.git
+ * [new branch]      antipasti -> antipasti
+branch 'antipasti' set up to track 'origin/antipasti'.  
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git checkout antipasti
+Switched to branch 'antipasti'
+Your branch is up to date with 'origin/antipasti'.      
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git branch
+* antipasti
+  main
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git status
+On branch antipasti
+Your branch is up to date with 'origin/antipasti'.      
+
+nothing to commit, working tree clean
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git pull         
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (1/1), 911 bytes | 53.00 KiB/s, done.
+From https://github.com/pterodactylscreams/pastaOperations
+   2e68c38..b2dc71f  main       -> origin/main
+Already up to date.
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git branch
+* antipasti
+  main
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git checkout main
+Switched to branch 'main'
+Your branch is behind 'origin/main' by 4 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git pull main
+fatal: 'main' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights     
+and the repository exists.
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git pull origin main
+From https://github.com/pterodactylscreams/pastaOperations
+ * branch            main       -> FETCH_HEAD
+Updating 2e68c38..b2dc71f
+Fast-forward
+ 1.txt | 26 +++++++++++++++++++++++++-
+ 1 file changed, 25 insertions(+), 1 deletion(-)        
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git checkout antipasti
+M       1.txt
+Switched to branch 'antipasti'
+Your branch is up to date with 'origin/antipasti'.
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git checkout main
+M       1.txt
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git add .
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git commit -m "i changed on main"
+[main 3dd547b] i changed on main
+ 1 file changed, 9 insertions(+)
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git branch
+  antipasti
+* main
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git checkout antipasti
+Switched to branch 'antipasti'
+Your branch is up to date with 'origin/antipasti'.
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git add .
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git commit -m "antipasti change"
+[antipasti eb5be8f] antipasti change
+ 1 file changed, 3 insertions(+)
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git branch
+* antipasti
+  main
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git diff main
+diff --git a/1.txt b/1.txt
+index f83577d..5ed49b4 100644
+--- a/1.txt
++++ b/1.txt
+@@ -26,11 +26,5 @@ git branch -d "name"
+
+ rename branch:
+
+Auto-merging 1.txt
+CONFLICT (content): Merge conflict in 1.txt
+Auto-merging 1.txt
+CONFLICT (content): Merge conflict in 1.txt
+Automatic merge failed; fix conflicts and then commit the result.
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git branch
+* antipasti
+  main
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git branch
+* antipasti
+  main
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)        
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git checkout antipasti
+Switched to branch 'antipasti'
+Your branch is ahead of 'origin/antipasti' by 4 commits.
+  (use "git push" to publish your local commits)        
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git add .
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git commit -m "merge #1"
+On branch antipasti
+Your branch is ahead of 'origin/antipasti' by 4 commits.
+  (use "git push" to publish your local commits)        
+
+nothing to commit, working tree clean
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git branch  
+* antipasti
+  main
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)        
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git add .
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git merge antipasti
+Updating 3dd547b..a4977fc
+Fast-forward
+ 1.txt | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git add .
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git commit -m "merge #2"
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)        
+
+nothing to commit, working tree clean
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git branch     
+Your branch is ahead of 'origin/antipasti' by 4 commits.  (use "git push" to publish your local commits)
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations>  git push -u origin  antipasti
+fatal: unable to access 'https://github.com/pterodactylscreams/pastaOperations.git/': TLS connect error: error:00000000:lib(0)::reason(0)
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git push -u origin  antipasti
+fatal: unable to access 'https://github.com/pterodactylscreams/pastaOperations.git/': Could not resolve host: github.com
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git branch
+* antipasti
+  main
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git push -u origin  antipasti
+fatal: unable to access 'https://github.com/pterodactylscreams/pastaOperations.git/': Could not resolve host: github.com
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git add .
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git status
+On branch antipasti
+Your branch is ahead of 'origin/antipasti' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)      
+        modified:   1.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   1.txt
+
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git commit -m "rangoli dekhni hai"
+[antipasti 68e97b5] rangoli dekhni hai
+ 1 file changed, 7 insertions(+), 2 deletions(-)
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git status
+On branch antipasti
+Your branch is ahead of 'origin/antipasti' by 5 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git log
+commit 68e97b559b5d40241cc934557e3eaf4b73ab825a (HEAD -> antipasti)
+Author: pterodactyl <pterodactylscreams@gmail.com>       
+Date:   Fri Feb 7 11:54:45 2025 +0530
+
+    rangoli dekhni hai
+
+commit a4977fc9669e34afeec38e4198dca2e14f758add (main)   
+Merge: eb5be8f 3dd547b
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git reset HEAD~|
+>> ^C
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git reset HEAD~1
+Unstaged changes after reset:
+M       1.txt
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git reset 1.txt
+Unstaged changes after reset:
+M       1.txt
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git log
+commit a4977fc9669e34afeec38e4198dca2e14f758add (HEAD -> antipasti, main)
+Merge: eb5be8f 3dd547b
+Author: pterodactyl <pterodactylscreams@gmail.com>       
+Date:   Fri Feb 7 11:33:35 2025 +0530
+
+    Merge branch 'main' into antipasti
+
+commit eb5be8f0c48f698a2f24a7443fe1d8542e9f4f73
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations>
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git push -u origin  antipasti
+fatal: unable to access 'https://github.com/pterodactylscreams/pastaOperations.git/': Could not resolve host: github.com
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git branch
+* antipasti
+  main
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations> git push -u origin  antipasti
+fatal: unable to access 'https://github.com/pterodactylscreams/pastaOperations.git/': Could not resolve host: github.com
+PS C:\Users\djsce.student\Desktop\pasta society\pastaOperations>
+
+
+
+
+
+
+
+
+
+
+
+
